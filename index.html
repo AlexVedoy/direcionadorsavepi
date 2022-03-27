@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direcionador Savepi</title>
+    <link type="text/css" rel="stylesheet" href="css/direcionador.css">
+    
+</head>
+<body>
+    <div>
+    </div>
+    <div> 
+        <img id="savepiimg" src="img/savepi.png" alt="savepiimg">
+        <img id="cnpqimg" src="img/cnpq.png" alt="cnpqimg">
+        <img id="fundação" src="img/fundação_araucaria.jpg" alt="fundação_araucaria">
+        <img id="utfprimg" src="img/utfpr.png" alt="utfprimg">
+    </div>
+    
+    <nav class="menuConteiner">
+        <h1 id="direcionadorEl">Direcionador Savepi</h1>
+        <h2 id="buscandoEl">O que você está buscando?</h2>
+        <input type="text" id="pesquisa" onkeyup="pesquisar()" placeholder="pesquisa" title="Faça aqui sua pesquisa">
+        <ul id="menu">
+            <!--JUROS-->
+            <li><a button id="vpEl">Encontrar Valor Presente</button></a></li>
+            <li><a button id="vfEl">Encontrar Valor Futuro</button></a></li>
+            <li><a button id="tjEl">Encontrar Taxa de Juros</button></a></li>
+            <li><a button id="npEl">Encontrar Número de Períodos</button></a></li>
+            <li><a button id="cmjEl">Comparar Modalidades de Juros</button></a></li>
+            <!--TAXA DE JUROS-->
+            <li><a button id="ctneEl">Conversão de Taxa Nominal em Efetiva</button></a></li>
+            <li><a button id="cteEl">Conversão de Taxas Equivalentes</button></a></li>
+            <li><a button id="tjvEl">Taxa de Juros Variável</button></a></li>
+            <li><a button id="tjrEl">Taxa de Juros Real</button></a></li>
+            <li><a button id="sXpEl">Selic X Poupança</button></a></li>
+            <!--SÉRIES UNIFORMES-->
+            <li><a button id="vpsuEl">Encontrar Valor Presente (séries uniformes)</button></a></li>
+            <li><a button id="vfsuEl">Encontrar Valor Futuro (séries uniformes)</button></a></li>
+            <li><a button id="vPresEl">Encontrar da Prestação (séries uniformes)</button></a></li>
+            <li><a button id="tjsuEl">Encontrar Taxa de Juros (séries uniformes)</button></a></li>
+            <li><a button id="tjsuEl">Encontrar Taxa de Juros (séries uniformes)</button></a></li>
+            <li><a button id="tjsuEl">Encontrar Taxa de Juros (séries uniformes)</button></a></li>
+            <li><a button id="npsuEl">Encontrar Número de Períodos (séries uniformes)</button></a></li>
+            <!--SÉRIES NÃO-UNIFORMES-->
+            <li><a button id="vpsnuEl">Encontrar Valor Presente (séries não-uniformes)</button></a></li>
+            <li><a button id="vfsnuEl">Encontrar Valor Futuro (séries não-uniformes)</button></a></li>
+            <li><a button id="tjsnuEl">Encontrar Taxa de Juros (séries não-uniformes)</button></a></li>
+            <li><a button id="npsnuEl">Encontrar Número de Períodos (séries não-uniformes)</button></a></li>
+            <!--SÉRIES PERPÉTUAS-->
+            <li><a button id="spupEl">Séries Perpétuas Uniformes Postecipadas</button></a></li>
+            <li><a button id="spuaEl">Séries Perpétuas Uniformes Antecipadas</button></a></li>
+            <li><a button id="spvEl">Séries Perpétuas Variáveis</button></a></li>
+            <!--SÉRIES FINITAS-->
+            <li><a button id="sfupEl">Séries Finitas Uniformes Postecipadas</button></a></li>
+            <li><a button id="sfuaEl">Séries Finitas Uniformes Antecipadas</button></a></li>
+            <!--SISTEMAS DE AMORTIZAÇÃO-->
+            <li><a button id="saEl">Sistemas de Amortização</button></a></li>
+            <!--CUSTO DO CAPITAL-->
+            <li><a button id="capm1El">Encontrar Custo do Capital Prório (CAPM1-Sem Risco País)</button></a></li>
+            <li><a button id="capm2El">Encontrar Custo do Capital Prório (CAPM2-Com Risco País)</button></a></li>
+            <li><a button id="wacc1El">Encontrar Custo Médio Ponderado do Capital (WACC1-Sem Impostos)</button></a></li>
+            <li><a button id="wacc2El">Encontrar Custo Médio Ponderado do Capital (WACC2-Com Imposto de Renda)</button></a></li>
+            <!--ANÁLISE CUSTO, VOLUME E LUCRO-->
+            <li><a button id="acvld1El">Análise Custo, Volume e Lucro Determinístico (1 Produto)</button></a></li>
+            <li><a button id="acvldnEl">Análise Custo, Volume e Lucro Determinístico (N Produtos)</button></a></li>
+            <li><a button id="acvldabcEl">Análise Custo, Volume e Lucro Determinístico (Classificação ABC)</button></a></li>
+            <li><a button id="acvle1El">Análise Custo, Volume e Lucro Estocático (1 Produto)</button></a></li>
+            <!--METODOLOGIA CLÁSSICA-->
+            <li><a button id="mcEl">Metodologia Clássica (VPL, Payback, TIR)</button></a></li>
+            <!--METODOLOGIA MULTI-ÍNDICE AMPLIADA 1 PROJETO - RECURSOS PRÓPRIOS-->
+            <li><a button id="fccr1El">MMIA - Fluxo de Caixa ou Custos e Receitas 1 Projeto (Recursos Próprios)(</button></a></li>
+            <li><a button id="qpc1El">MMIA - Quantidades, Preços e Custos 1 Projeto (Recursos Próprios)</button></a></li>
+            <li><a button id="cr1El">MMIA - Custos e Receitas 1 Projeto (Recursos Próprios)</button></a></li>
+            <!--METODOLOGIA MULTI-ÍNDICE AMPLIADA 2 PROJETO - RECURSOS PRÓPRIOS, FINANCIAMENTO E LEASING-->
+            <li><a button id="fccr2El">MMIA - Fluxo de Caixa ou Custos e Receitas 1 Projeto (Recursos Próprios, Financiamento e Leasing)(</button></a></li>
+            <li><a button id="qpc2El">MMIA - Quantidades, Preços e Custos 1 Projeto (Recursos Próprios, Financiamento e Leasing)</button></a></li>
+            <li><a button id="cr2El">MMIA - Custos e Receitas 1 Projeto (Recursos Próprios, Financiamento e Leasing)</button></a></li>
+            <!--METODOLOGIA MULTI-ÍNDICE AMPLIADA 2 PROJETOS OU MAIS - RECURSOS PRÓPRIOS, FINANCIAMENTO E LEASING-->
+            <li><a button id="mmia2iEl">Metodologia Multi-índice (MMIA) 2 Projetos Vidas Iguais</button></a></li>
+            <li><a button id="mmia2dEl">Metodologia Multi-índice (MMIA) 2 Projetos Vidas Diferentes</button></a></li>
+            <li><a button id="mmianiEl">Metodologia Multi-índice (MMIA) N Projetos Vidas Iguais</button></a></li>
+            <li><a button id="mmiandEl">Metodologia Multi-índice (MMIA) N Projetos Vidas Diferentes</button></a></li>
+
+        </ul>
+    <nav>
+
+    <script type="text/javascript" src="js/direcionadorsavepi.js" defer></script>
+</body>
+</html>
