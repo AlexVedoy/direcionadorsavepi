@@ -1,0 +1,82 @@
+body{
+    font-family: Arial;
+}
+*{
+    box-sizing: border-box;
+}
+.menuConteiner{
+    width: 400px;
+    padding: 15px 15px;
+    background-color: #bbcded;
+    margin-left: 1%;
+    margin-top: -31%;
+    box-shadow: 5px 10px #eee;
+    display: block;
+}
+
+#menu li a{
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+#menu li a:hover{
+    background-color: #eee;
+    box-shadow: 2px 2px #808080;
+}
+.menuConteiner h2{
+    padding-left: 15px;
+}
+#pesquisa{
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid#ddd;
+    margin-top: -4%;
+}
+#pesquisa:focus{
+background-color: #f1ecec;
+}
+#menu{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.borda{
+    border: 1px solid #000;
+}
+#savepiimg {
+    display: block;
+    width: 410px;
+    margin-top: 0%;
+}
+#cnpqimg{
+    display: block;
+    width: 300px;
+    margin-left: 55%;
+    margin-top: -120px;
+}
+#fundação{
+    display: block;
+    margin-top: 1%;
+    margin-left: 52%;
+    width: 400px;
+}
+#utfprimg{
+    width: 200px;
+    margin-left: 60%;
+    margin-top: 3%;
+    display: block
+}
+#direcionadorEl{
+    margin-top: -3%;
+    margin-left: 10%;
+    display: block;
+    font-size: 30px;
+}
+#buscandoEl{
+    display: block;
+    margin-left: 4%;
+    margin-top: -6%;
+}
